@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  CustomCellXibTest
 //
 //  Created by T on 2014. 1. 17..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface DetailViewController : UITableViewController
 
 @end

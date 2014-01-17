@@ -14,13 +14,16 @@
 		13DF4B9018891F0B008F361F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4B8F18891F0B008F361F /* main.m */; };
 		13DF4B9418891F0B008F361F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4B9318891F0B008F361F /* AppDelegate.m */; };
 		13DF4B9718891F0B008F361F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DF4B9518891F0B008F361F /* Main.storyboard */; };
-		13DF4B9A18891F0B008F361F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4B9918891F0B008F361F /* ViewController.m */; };
 		13DF4B9C18891F0B008F361F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF4B9B18891F0B008F361F /* Images.xcassets */; };
 		13DF4BA318891F0B008F361F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF4BA218891F0B008F361F /* XCTest.framework */; };
 		13DF4BA418891F0B008F361F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF4B8318891F0A008F361F /* Foundation.framework */; };
 		13DF4BA518891F0B008F361F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF4B8718891F0A008F361F /* UIKit.framework */; };
 		13DF4BAD18891F0B008F361F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13DF4BAB18891F0B008F361F /* InfoPlist.strings */; };
 		13DF4BAF18891F0B008F361F /* CustomCellXibTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4BAE18891F0B008F361F /* CustomCellXibTestTests.m */; };
+		13DF4BB918891F79008F361F /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DF4BB818891F79008F361F /* CustomCell.xib */; };
+		13DF4BBC18891FEE008F361F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4BBB18891FEE008F361F /* ViewController.m */; };
+		13DF4BBF18892108008F361F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4BBE18892108008F361F /* CustomCell.m */; };
+		13DF4BC31889226C008F361F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF4BC21889226C008F361F /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,20 @@
 		13DF4B9218891F0B008F361F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13DF4B9318891F0B008F361F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13DF4B9618891F0B008F361F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13DF4B9818891F0B008F361F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13DF4B9918891F0B008F361F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13DF4B9B18891F0B008F361F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13DF4BA118891F0B008F361F /* CustomCellXibTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCellXibTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DF4BA218891F0B008F361F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		13DF4BAA18891F0B008F361F /* CustomCellXibTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomCellXibTestTests-Info.plist"; sourceTree = "<group>"; };
 		13DF4BAC18891F0B008F361F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13DF4BAE18891F0B008F361F /* CustomCellXibTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellXibTestTests.m; sourceTree = "<group>"; };
+		13DF4BB818891F79008F361F /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		13DF4BBA18891FEE008F361F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13DF4BBB18891FEE008F361F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13DF4BBD18892108008F361F /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
+		13DF4BBE18892108008F361F /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
+		13DF4BC018892153008F361F /* CustomCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellDelegate.h; sourceTree = "<group>"; };
+		13DF4BC11889226C008F361F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		13DF4BC21889226C008F361F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +121,19 @@
 		13DF4B8918891F0B008F361F /* CustomCellXibTest */ = {
 			isa = PBXGroup;
 			children = (
+				13DF4BBD18892108008F361F /* CustomCell.h */,
+				13DF4BBE18892108008F361F /* CustomCell.m */,
 				13DF4B9218891F0B008F361F /* AppDelegate.h */,
 				13DF4B9318891F0B008F361F /* AppDelegate.m */,
 				13DF4B9518891F0B008F361F /* Main.storyboard */,
-				13DF4B9818891F0B008F361F /* ViewController.h */,
-				13DF4B9918891F0B008F361F /* ViewController.m */,
 				13DF4B9B18891F0B008F361F /* Images.xcassets */,
 				13DF4B8A18891F0B008F361F /* Supporting Files */,
+				13DF4BB818891F79008F361F /* CustomCell.xib */,
+				13DF4BBA18891FEE008F361F /* ViewController.h */,
+				13DF4BBB18891FEE008F361F /* ViewController.m */,
+				13DF4BC018892153008F361F /* CustomCellDelegate.h */,
+				13DF4BC11889226C008F361F /* DetailViewController.h */,
+				13DF4BC21889226C008F361F /* DetailViewController.m */,
 			);
 			path = CustomCellXibTest;
 			sourceTree = "<group>";
@@ -230,6 +245,7 @@
 			files = (
 				13DF4B9C18891F0B008F361F /* Images.xcassets in Resources */,
 				13DF4B8E18891F0B008F361F /* InfoPlist.strings in Resources */,
+				13DF4BB918891F79008F361F /* CustomCell.xib in Resources */,
 				13DF4B9718891F0B008F361F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13DF4B9A18891F0B008F361F /* ViewController.m in Sources */,
+				13DF4BC31889226C008F361F /* DetailViewController.m in Sources */,
+				13DF4BBC18891FEE008F361F /* ViewController.m in Sources */,
 				13DF4B9418891F0B008F361F /* AppDelegate.m in Sources */,
+				13DF4BBF18892108008F361F /* CustomCell.m in Sources */,
 				13DF4B9018891F0B008F361F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

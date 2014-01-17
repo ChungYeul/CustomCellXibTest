@@ -1,25 +1,20 @@
 //
-//  ViewController.m
+//  DetailViewController.m
 //  CustomCellXibTest
 //
 //  Created by T on 2014. 1. 17..
 //  Copyright (c) 2014년 T. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DetailViewController.h"
 #import "CustomCellDelegate.h"
 #import "CustomCell.h"
 
-@interface ViewController ()<CustomCellDelegate>
+@interface DetailViewController ()
 
 @end
 
-@implementation ViewController
-
-- (void)buttonClicked:(id)sender {
-    NSLog(@"sender %@", sender);
-    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"Detail"] animated:YES];
-}
+@implementation DetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,11 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil]forCellReuseIdentifier:@"CUSTOM_CELL"];
-    
-    self.refreshControl = [[UIRefreshControl alloc] init];
-    
-    [self.refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"DETAIL_CELL"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,13 +38,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)handleRefresh:(id)sender
-{
-    NSLog(@"refresh");
-    // do your refresh here...
-    // 통신...
-    [sender endRefreshing];
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,17 +55,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"CUSTOM_CELL";
+    static NSString *CellIdentifier = @"DETAIL_CELL";
     CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.delegate = self;
+    NSLog(@"cell %@", cell);
+//    cell.delegate = self;
     // Configure the cell...
     UILabel *label = (UILabel *)[cell viewWithTag:100];
-    label.text = @"Haha";
+    label.text = @"Hoho";
     
     return cell;
 }
